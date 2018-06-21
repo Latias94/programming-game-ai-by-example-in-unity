@@ -22,7 +22,7 @@ public class EnterMineAndDigForNugget : State
     {
         miner.AddToGoldCarried(1);
         miner.IncreaseFatigue();
-        Debug.Log("矿工：采到一个金块");
+        Debug.Log("矿工：采到一个金块 | 身上有 " + miner.GoldCarried() + " 个金块");
         // 口袋里金块满了就去银行存
         if (miner.PocketsFull())
         {
@@ -38,7 +38,7 @@ public class EnterMineAndDigForNugget : State
 
     public override void Exit(Miner miner)
     {
-        Debug.Log("旷工：带着满口袋的金块离开了金矿");
+        Debug.Log("矿工：离开金矿");
     }
 }
 
@@ -69,7 +69,7 @@ public class GoHomeAndSleepTilRested : State
     {
         if (!miner.Fatigued())
         {
-            Debug.Log("睡得真好！是时候挖矿了！");
+            Debug.Log("矿工：睡得真好！是时候挖矿了！");
             miner.ChangeState(EnterMineAndDigForNugget.Instance);
         }
         else
