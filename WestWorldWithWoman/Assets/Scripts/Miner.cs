@@ -67,7 +67,7 @@
     /// <summary>
     /// 等于 Update 函数，在 GameManager 内被调用
     /// </summary>
-    public void MinerUpdate()
+    public override void EntityUpdate()
     {
         m_iThirst += 1;
         m_stateMachine.StateMachineUpdate();

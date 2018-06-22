@@ -12,7 +12,7 @@
         m_pStateMachine.SetGlobalState(WifesGlobalState.Instance);
     }
 
-    public void MinersWifeUpdate()
+    public override void EntityUpdate()
     {
         m_pStateMachine.StateMachineUpdate();
     }

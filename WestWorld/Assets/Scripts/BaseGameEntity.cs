@@ -29,4 +29,5 @@ public abstract class BaseGameEntity
             m_iNextValidID = m_ID + 1;
         }
     }
+    public abstract void EntityUpdate();
 }

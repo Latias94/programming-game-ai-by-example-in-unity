@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < 20; i++)
         {
-            miner.MinerUpdate();
-            minersWife.MinersWifeUpdate();
+            miner.EntityUpdate();
+            minersWife.EntityUpdate();
             yield return new WaitForSeconds(UpdateTimeInterval);
         }
     }
