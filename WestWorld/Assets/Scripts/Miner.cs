@@ -78,16 +78,8 @@ public class Miner : BaseGameEntity
     /// <param name="p"></param>
     public void ChangeState(State state)
     {
-        //make sure both states are both valid before attempting to
-        //call their methods
-
-        //call the exit method of the existing state
         m_pCurrentState.Exit(this);
-
-        //change state to the new state
         m_pCurrentState = state;
-
-        //call the entry method of the new state
         m_pCurrentState.Enter(this);
     }
 
