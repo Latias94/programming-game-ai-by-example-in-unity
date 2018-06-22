@@ -2,7 +2,6 @@
 
 public struct Telegram
 {
-    private const double SmallestDelay = 0.25;
     public BaseGameEntity Sender { get; private set; }
     public BaseGameEntity Receiver { get; private set; }
     public MessageType Message { get; private set; }
