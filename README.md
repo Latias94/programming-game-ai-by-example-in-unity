@@ -3,3 +3,5 @@
 
 Unity 版本：2017.3.1f1
 
+相关博文：
+* [Unity 中用有限状态机来实现一个 AI](https://frankorz.com/2018/06/22/finite-state-machine-in-unity/)
